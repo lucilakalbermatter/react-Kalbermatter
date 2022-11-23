@@ -1,0 +1,20 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(0, 255, 255, 0.353);
+}
+
+.box > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 60%;
+    height: 200px;
+    background-color: black;
+    font-size: 50px;
+    border-radius: 40px;
+}
