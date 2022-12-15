@@ -12,3 +12,11 @@ nav {
 .nav-item {
     font-size:20px;
 }
+
+.navbar-nav{
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+}
