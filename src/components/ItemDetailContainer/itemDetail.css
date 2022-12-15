@@ -3,13 +3,12 @@
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    margin: 20px
-
+    margin: 20px;
 }
 
 .detalleProducto img{
     width: 100%;
-    height: 600px;
+    height: 800px;
     padding: 20px;
 }
 
@@ -19,18 +18,26 @@
 
 .descripcion {
     text-align: center;
+    width: 40%;
+    font-size: 30px;
 }
 
 .descripcion h3{
     text-decoration: underline;
     margin-top: 40px;
+    font-size: 35px;
 }
 
 .descripcion p {
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 button {
     width: 50%;
+}
+
+span {
+    font-weight: bold;
+    color: red;
 }

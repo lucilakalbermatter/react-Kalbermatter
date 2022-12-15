@@ -13,7 +13,7 @@ function ItemDetailContainer() {
     const promise = new Promise((resolve) => {
         setTimeout(() => {
             resolve(data);
-        }, 2000);
+        }, 1000);
     });
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function ItemDetailContainer() {
 
     return (
         <div>
-            <ItemDetail producto={producto} />
+            <ItemDetail producto={producto} />        
         </div>
     );
 }

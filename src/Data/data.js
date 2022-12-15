@@ -6,6 +6,7 @@ export const data = [
         img:"/img/img1.png",
         descripcion: "Collar con semillas negras y blancas",
         precio: 2500,
+        stock: 2
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const data = [
         categoria: "collares",
         img:"/img/img2.png",
         descripcion: "Collar de tagua y alpaca",
-        precio: 2800
+        precio: 2800,
+        stock: 3
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const data = [
         categoria: "collares",
         img:"/img/img3.png",
         descripcion: "Collar con semillas naranjas y grises",
-        precio: 2100
+        precio: 2100,
+        stock: 5
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const data = [
         categoria: "collares",
         img:"/img/img4.png",
         descripcion: "Collar clásico gris y rojo",
-        precio: 2900
+        precio: 2900,
+        stock: 2
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const data = [
         categoria: "collares",
         img:"/img/img5.png",
         descripcion: "Collar negro y natural con tintes vegetales",
-        precio: 2450
+        precio: 2450,
+        stock: 3
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const data = [
         categoria: "collares",
         img:"/img/img6.png",
         descripcion: "Collar de alpaca oxidada, tagua y acero",
-        precio: 1900
+        precio: 1900,
+        stock: 4
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ export const data = [
         categoria: "collares",
         img:"/img/img7.png",
         descripcion: "Collar multicolor",
-        precio: 2999
+        precio: 2999,
+        stock: 4
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ export const data = [
         categoria: "collares",
         img:"/img/img8.png",
         descripcion: "Collar celeste, azul y verde agua",
-        precio: 2700
+        precio: 2700,
+        stock: 2
     },
     {
         id: 9,
@@ -69,7 +77,8 @@ export const data = [
         categoria: "aros",
         img:"/img/img9.png",
         descripcion: "Aros Alpaca, plata ,tagua",
-        precio: 1700
+        precio: 1700,
+        stock: 1
     },
     {
         id: 10,
@@ -77,7 +86,8 @@ export const data = [
         categoria: "aros",
         img:"/img/img10.png",
         descripcion: "Círculos de tagua, alpaca y acero",
-        precio: 1500
+        precio: 1500,
+        stock: 6
     },
     {
         id: 11,
@@ -85,7 +95,8 @@ export const data = [
         categoria: "aros",
         img:"/img/img11.png",
         descripcion: "Aros rosas de tagua y acero",
-        precio: 1800
+        precio: 1800,
+        stock: 7
     },
     {
         id: 12,
@@ -93,14 +104,16 @@ export const data = [
         categoria: "aros",
         img:"/img/img12.png",
         descripcion: "Aros acero quirúrgico y tagua en varios colores",
-        precio: 1500
+        precio: 1500,
+        stock: 1
     },
     {
         id: 13,
         nombre: "Aros Multicolor",
         img:"/img/img13.png",
         descripcion: "Aros de alpaca, plata y tagua",
-        precio: 1900
+        precio: 1900,
+        stock: 8
     },
     {
         id: 14,
@@ -108,7 +121,8 @@ export const data = [
         categoria: "aros",
         img:"/img/img14.png",
         descripcion: "Aros de alpaca, plata y tagua",
-        precio: 1300
+        precio: 1300,
+        stock: 6
     },
     {
         id: 15,
@@ -116,7 +130,8 @@ export const data = [
         categoria: "anillos",
         img:"/img/img15.png",
         descripcion: "Anillo de tagua o marfil vegetal, varios colores",
-        precio: 2100
+        precio: 2100,
+        stock: 5
     },
     {
         id: 16,
@@ -124,7 +139,8 @@ export const data = [
         categoria: "anillos",
         img:"/img/img16.png",
         descripcion: "Anillo de tagua o marfil vegetal rayado",
-        precio: 2300
+        precio: 2300,
+        stock: 3
     },
     {
         id: 17,
@@ -132,7 +148,8 @@ export const data = [
         categoria: "pulseras",
         img:"/img/img17.png",
         descripcion: "Pulseras en alpaca o bronce con fichas de tagua o marfil vegetal",
-        precio: 2100
+        precio: 2100,
+        stock: 2
     },
     {
         id: 18,
@@ -140,7 +157,8 @@ export const data = [
         categoria: "pulseras",
         img:"/img/img18.png",
         descripcion: "Pulsera roja hecha de tagua",
-        precio: 3100
+        precio: 3100,
+        stock: 2
     },
     {
         id: 19,
@@ -148,7 +166,8 @@ export const data = [
         categoria: "pulseras",
         img:"/img/img19.png",
         descripcion: "Pulseras de puros colores",
-        precio: 3200
+        precio: 3200,
+        stock: 1
     },
     {
         id: 20,
@@ -156,6 +175,7 @@ export const data = [
         categoria: "pulseras",
         img:"/img/img20.png",
         descripcion: "Pulsera lisas varios colores",
-        precio: 3190
+        precio: 3190,
+        stock: 1
     }
 ];

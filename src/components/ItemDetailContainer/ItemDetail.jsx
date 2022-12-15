@@ -1,6 +1,10 @@
+import ItemCount from "./ItemCount";
 import "./itemDetail.css";
+import "./itemCount.css"
+
 
 function ItemDetail({producto}) {
+
   return (
     <div className="detalleProducto">
         <div className="img">
@@ -11,7 +15,8 @@ function ItemDetail({producto}) {
         <h3>Descripción producto:</h3>
         <p>{producto.descripcion}</p>
         <p>$ {producto.precio}</p>
-        <button>Comprar</button>
+        <p>Stock disponible: <span>{producto.stock}</span></p>
+        <ItemCount stock={producto.stock}/>
         </div>
     </div>
   )
