@@ -16,21 +16,21 @@ export default function NavBar(props) {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto me-5">
-                        <li className="nav-item me-4">
+                        <li className="nav-item me-5">
                             <Link className="nav-Link" to="/category/aros">Aros</Link>
                         </li>
-                        <li className="nav-item me-4">
+                        <li className="nav-item me-5">
                             <Link className="nav-Link" to="/category/anillos">Anillos</Link>
                         </li>
-                        <li className="nav-item me-4">
+                        <li className="nav-item me-5">
                             <Link className="nav-Link" to="/category/collares">Collares</Link>
                         </li>
-                        <li className="nav-item me-4">
+                        <li className="nav-item me-5">
                             <Link className="nav-Link" to="/category/pulseras">Pulseras</Link>
                         </li>
+                        <li className="nav-item">{CartWidget()}</li> 
                     </ul>
                 </div>
-                <p>{CartWidget()}</p> 
             </div>
         </nav>
   )

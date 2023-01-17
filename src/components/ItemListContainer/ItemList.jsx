@@ -1,7 +1,7 @@
 import Item from './Item';
 import "./itemList.css";
 
-function ItemList({productos}) {
+function ItemList({ productos }) {
     return (
         <div className="itemList">
             {productos.map((producto) => (
@@ -14,6 +14,7 @@ function ItemList({productos}) {
                     img={producto.img}
                     precio={producto.precio}
                     stock={producto.stock}
+                    descuento={producto.descuento}
                 />
             ))}
         </div>
