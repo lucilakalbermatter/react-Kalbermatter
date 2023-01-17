@@ -1,30 +1,36 @@
 import React from 'react';
-import { data } from "../../Data/data";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import ItemDetail from './ItemDetail';
+import Loader from '../Loader/Loader';
+import { obtenerUnicoItem } from "../../servicios/firebase";
 
 function ItemDetailContainer() {
 
     const [producto, setProducto] = useState({});
+    const [cargando, setCargando] = useState(true);
+
     const { id } = useParams();
 
 
-    const promise = new Promise((resolve) => {
-        setTimeout(() => {
-            resolve(data);
-        }, 1000);
-    });
+    async function obtenerData() {
+        let respuesta = await obtenerUnicoItem(id);
+        setProducto(respuesta);
+        setCargando(false);
+    }
 
     useEffect(() => {
-        promise.then(setProducto(data.find(item => item.id === parseInt(id))));
-    }, [id]);
+        obtenerData()
+    }, []);
 
-    return (
-        <div>
-            <ItemDetail producto={producto} />        
-        </div>
-    );
+    return <>
+        {
+            cargando ?
+                <Loader />
+                :
+                <ItemDetail producto={producto} />
+        }
+    </>
 }
 
 export default ItemDetailContainer;

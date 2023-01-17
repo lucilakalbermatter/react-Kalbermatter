@@ -15,7 +15,8 @@ export const data = [
         img:"/img/img2.png",
         descripcion: "Collar de tagua y alpaca",
         precio: 2800,
-        stock: 3
+        stock: 3,
+        descuento: 10
     },
     {
         id: 3,
@@ -42,7 +43,9 @@ export const data = [
         img:"/img/img5.png",
         descripcion: "Collar negro y natural con tintes vegetales",
         precio: 2450,
-        stock: 3
+        stock: 3,
+        descuento: 15
+
     },
     {
         id: 6,
@@ -96,7 +99,8 @@ export const data = [
         img:"/img/img11.png",
         descripcion: "Aros rosas de tagua y acero",
         precio: 1800,
-        stock: 7
+        stock: 7,
+        descuento: 20
     },
     {
         id: 12,
@@ -167,7 +171,8 @@ export const data = [
         img:"/img/img19.png",
         descripcion: "Pulseras de puros colores",
         precio: 3200,
-        stock: 1
+        stock: 1,
+        descuento: 10
     },
     {
         id: 20,

@@ -1,50 +1,39 @@
 import React, { useEffect, useState } from 'react';
 import './itemListContainer.css';
 import ItemList from './ItemList';
-import { data } from "../../Data/data";
+import { obtenerProductos, obtenerCategoria } from "../../servicios/firebase";
 import { useParams } from "react-router-dom";
+import Loader from '../Loader/Loader';
+
 
 function ItemListContainer(greeting) {
 
   const [productos, setProductos] = useState([]);
+  const [cargando, setCargando] = useState(true);
   const categoryId = useParams().id;
-
-  //Se obtienen todos los productos
-  const obtenerProductos = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(data);
-    }, 2000);
-  });
-
-
-  //Se obtienen los productos por categoría
-  function obtenerCategoria(categoryId) {
-    return new Promise((resolve, reject) => {
-      let productosEncontrados = data.filter((item) => {
-        return item.categoria === categoryId;
-      });
-
-      if (productosEncontrados.length > 0)
-        resolve(productosEncontrados);
-      else
-        reject("No hay productos en esa categoria")
-    });
-  }
 
 
   useEffect(() => {
+    setTimeout(() => {
     if (categoryId === undefined) {
-      obtenerProductos.then((respuesta) => {
+      obtenerProductos().then((respuesta) => {
         setProductos(respuesta);
+        setCargando(false);
       });
 
     } else {
-      obtenerCategoria(categoryId).then((categoriaFiltrada) =>
-        setProductos(categoriaFiltrada)
-      );
+      obtenerCategoria(categoryId).then((categoriaFiltrada) => {
+        setProductos(categoriaFiltrada);
+        setCargando(false);
+      });
     }
+  }, 1500);
   }, [categoryId]);
 
+
+  if (cargando) {
+    return  <Loader />;
+  }
 
   return (
     <div>
